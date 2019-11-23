@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Curso de JavaScript</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+        <!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>JavaScript</h1>
+                <h3>Curso Básico de </h3>
+                <p>
+                    <small>Created by <a href="#">Freddy Cahuas</a> / <a href="http://twitter.com/frecaze">@frecaze</a></small>
+                </p>
+            </section>
+
+
+            <section>
+                <h2>JavaScript no es Java</h2>
+                <p>
+                    Son dos lenguajes de programación diferentes.
+                </p>
+            </section>
+
+            <section>
+                <h2>Donde se ubica el <em>codigo</em> de JavaScript</h2>
+
+            </section>
+
+            <section>
+                <h2>Usar <em>; (punto y coma) </em>al final de cada sentencia.</h2>
+
+            </section>
+
+            <section>
+                <h2>Tipos de Datos</h2>
+
+                <ul>
+                    <li>números</li>
+                    <li>cadenas</li>
+                    <li>boleanos</li>
+                    <li>arreglos</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Variables</h2>
+                <p>comienza por una letra y puede incluir números</p>
+            </section>
+
+            <section>
+                <h2>Función <em>console.log()</em></h2>
+
+                <pre><code data-trim contenteditable>
+                    var nombre = "Freddy Cahuas";
+                    console.log("Hola " + nombre);
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Función <em>document.write()</em></h2>
+
+                <pre><code data-trim contenteditable>
+                    var nombre = "Freddy Cahuas";
+                    document.write("Hola " + nombre);
+                </code></pre>
+            </section>
+
+
+            <section>
+                <h2>
+                    Función prompt
+                </h2>
+                <p>para ingresar datos</p>
+
+                <pre><code data-trim contenteditable>
+                    var nombre = prompt("Por Favor ingresa tu nombre");
+                </code></pre>
+
+            </section>
+
+
+            <section>
+                <h2>Función <em>document.write()</em></h2>
+
+                <pre><code data-trim contenteditable>
+                    var nombre = "Freddy Cahuas";
+                    document.write("Hola " + nombre);
+                </code></pre>
+            </section>
+
+
+            <section>
+                <h2>Programación modular</h2>
+
+                <p>La programación modular es una metodología de programación que permite construir
+                    un programa grande descomponiéndolo en pequeños subprogramas o módulos.</p>
+
+                </section>
+
+
+                <section>
+                    <h2>Variables locales y globales</h2>
+
+                    <p>Los métodos o funciones pueden utilizar sus propias variables denominadas variables locales o
+                        variables de uso compartido, comunes a todos los métodos, denominadas variables
+                        globales.</p>
+
+                    </section>
+
+                    <section>
+                        <h2>Variables locales</h2>
+
+                        <p>Una variable local es una variable que se declara en el interior de un método o funcion que sólo puede ser utilizada dentro del método donde fue declarada. Este tipo de variable se crea al iniciar la ejecución del método y se destruye al finalizar.</p>
+
+                    </section>
+
+                    <section>
+                        <h2>Funciones o métodos tipo void</h2>
+
+                        <p>  no retorna ningún resultado al punto donde es invocado, razón por el que se le conoce también como <em>método sin valor de retorno</em>
+                        </p>
+
+                        <p> Los métodos tipo void pueden dividirse a su vez en dos tipos:</p>
+
+                        <ul>
+                            <li>Métodos tipo void sin parámetros.</li>
+                            <li>Métodos tipo void con parámetros.</li>
+                        </ul>
+
+                    </section>
+
+                    <section>
+                       <h2>Métodos tipo void sin parámetros.</h2>
+                       <p>Este tipo de método se define de la siguiente manera:</p>
+                       <pre><code data-trim contenteditable>
+                         function nombre(){
+                         Declaración de variables locales
+                         Cuerpo del método
+                     }
+                 </code></pre>
+                 <p>Este tipo de método se invoca de la siguiente manera:</p>
+                 <pre><code data-trim contenteditable>
+                    nombre();
+                </code></pre>
+
+            </section>
+
+
+
+            <section>
+                <h2>Métodos tipo void con parámetros.</h2>
+                <p>Este tipo de método se define de la siguiente manera:</p>
+                <pre><code data-trim contenteditable>
+                 function nombre(p1, p2, p3, ...){
+                 Declaración de variables locales
+                 Cuerpo del método
+             }
+         </code></pre>
+
+         <p>Donde:</p>
+         <ul>
+            <li>nombre: es el nombre del método</li>
+            <li>p1,p2, p3, ... : Son los nombres de los parámetros</li>
+        </ul>
+
+
+    </section>
+
+
+    <section>
+        <p>Este tipo de método se invoca de la siguiente manera:</p>
+        <pre><code data-trim contenteditable>
+            nombre(v1, v2, v3, ...);
+        </code></pre>
+
+        <p>Donde:</p>
+        <ul>
+            <li>nombre: es el nombre del método invocado</li>
+            <li>v1,v2, v3, ... : Son los valores de los parámetros</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h2>Funciones o métodos con valor de retorno</h2>
+
+        <p>  puede recibir datos de
+            entrada a través de variables locales denominadas parámetros y que retorna un
+            resultado al punto donde es invocado.
+        </p>
+
+        <p> Los métodos tipo void pueden dividirse a su vez en dos tipos:</p>
+
+        <ul>
+            <li>Métodos con retorno sin parámetros.</li>
+            <li>Métodos con retorno con parámetros.</li>
+        </ul>
+
+    </section>
+
+
+
+    <section>
+        <h2>Métodos con retorno sin parámetros.</h2>
+        <p>Este tipo de método se define de la siguiente manera:</p>
+        <pre><code data-trim contenteditable>
+         function nombre(){
+         Declaración de variables locales
+         Cuerpo del método
+         return valor;
+     }
+ </code></pre>
+ <p>Este tipo de método se invoca de la siguiente manera:</p>
+ <pre><code data-trim contenteditable>
+    variable = nombre();
+</code></pre>
+
+</section>
+
+
+
+
+
+
+<section>
+    <h2>Métodos con retorno con parámetros.</h2>
+    <p>Este tipo de método se define de la siguiente manera:</p>
+    <pre><code data-trim contenteditable>
+     function nombre(p1, p2, p3, ...){
+     Declaración de variables locales
+     Cuerpo del método
+     return valor;
+ }
+</code></pre>
+
+<p>Donde:</p>
+<ul>
+    <li>nombre: es el nombre del método</li>
+    <li>p1,p2, p3, ... : Son los nombres de los parámetros</li>
+</ul>
+
+</section>
+
+<section>
+
+
+    <p>Este tipo de método se invoca de la siguiente manera:</p>
+    <pre><code data-trim contenteditable>
+        variable = nombre(v1, v2, v3, ...);
+    </code></pre>
+
+    <p>Donde:</p>
+    <ul>
+        <li>nombre: es el nombre del método invocado</li>
+        <li>v1,v2, v3, ... : Son los valores de los parámetros</li>
+    </ul>
+
+</section>
+
+
+
+
+<section>
+
+
+
+
+
+    <h1>Programación Orientado a Objetos (POO) </h1>
+
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+   <img src="img/celular.png" alt="celular">
+   <table>
+    <thead>
+        <tr>
+            <th>Propiedades</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+
+            <td>Color</td>
+            <td></td>
+        </tr>
+        <tr>
+
+            <td>Precio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Peso</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+
+<section>
+
+    <img src="img/celular.png" alt="celular">
+    <table>
+        <thead>
+            <tr>
+                <th>Comportamientos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Prender Celular</td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td>Timbrar</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Realizar Llamada</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+<section>
+
+    <img src="img/auto.jpg" alt="celular">
+    <table>
+        <thead>
+            <tr>
+                <th>Propiedades</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Color</td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td>Precio</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section>
+
+    <img src="img/auto.jpg" alt="auto">
+    <table>
+        <thead>
+            <tr>
+                <th>Comportamientos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Encender Auto</td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td>Acelerar</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Frenar</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+<section>
+
+    <img src="img/persona.png" alt="celular">
+    <table>
+        <thead>
+            <tr>
+                <th>Propiedades</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Nombre</td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td>Edad</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section>
+
+    <img src="img/persona.png" alt="celular">
+    <table>
+        <thead>
+            <tr>
+                <th>Comportamientos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Caminar</td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td>Saltar</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Correr</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section>
+
+    <h2>Crear objetos </h2>
+
+    <img src="img/scratch.png" alt="scratch">
+
+    <pre><code data-trim contenteditable>
+
+     var gato={
+
+     nombre:"scracth",
+     raza:"chusquito",
+     edad:2,
+     color:"anaranjado",
+
+ };
+
+</code></pre>
+
+<p>variable:valor</p>
+
+</section>
+
+
+<section>
+
+    <h2>Acceder a la propiedades de un objeto </h2>
+
+    <p>Para acceder a valor de la propiedad de un objeto, tenemos que indicar el nombre del objeto seguido de un punto y el nombre de la variable.</p>
+
+    <pre><code data-trim contenteditable>
+
+        gato.nombre;
+
+    </code></pre>
+
+    <p> otra forma de hacerlo es usando corchetes</p>
+
+
+    <pre><code data-trim contenteditable>
+
+        gato.["nombre"];
+
+    </code></pre>
+
+</section>
+
+
+
+<section>
+
+    <img src="img/star.jpeg" alt="" width="25%">
+
+    <p> Crear el objeto celular, el objeto auto, el objeto persona </p>
+
+</section>
+
+
+
+<section>
+
+    <h2>Cambiar las propiedades de un objeto </h2>
+
+    <p>Para cambiar el valor de la propiedad de un objeto, tenemos que indicar el nombre del objeto seguido de un punto, el nombre de la variable agregar el operador de asignación (=) y el nuevo valor de la propiedad </p>
+
+    <pre><code data-trim contenteditable>
+        gato.nombre="michifus";
+    </code></pre>
+
+    <p> otra forma sería usando corchetes</p>
+    <pre><code data-trim >
+        gato["nombre"]="michifus";
+    </code></pre>
+</section>
+
+
+
+<section>
+    <p>A nuestro objeto gato le vamos agregar el metodo decirNombre()</p>
+    <pre><code data-trim contenteditable>
+     var gato={
+     nombre:"scracth",
+     raza:"chusquito",
+     edad:2,
+     color:"anaranjado",
+
+     //metodo
+     decirNombre:function(){
+     alert(gato.nombre);
+ }
+};
+
+</code></pre>
+
+</section>
+
+<section>
+    <p>A nuestro objeto gato le vamos agregar el metodo cambiarNombre()</p>
+    <pre><code data-trim contenteditable>
+     var gato={
+     nombre:"scracth",
+     raza:"chusquito",
+     edad:2,
+     color:"anaranjado",
+
+     //metodo
+     cambiarNombre:function(nuevoNombre){
+     this.nombre = nuevoNombre;
+ },
+};
+
+</code></pre>
+
+</section>
+
+<section>
+    <p>Crear Objetos a partir de otros objetos</p>
+    <pre><code data-trim contenteditable>
+
+     var gato2= Object.create(gato);
+     gato2.cambiarNombre("minino");
+
+     var gato3= Object.create(gato);
+     gato2.cambiarNombre("gatito");
+
+
+ </code></pre>
+
+</section>
+
+
+<section>
+
+    <img src="img/star.jpeg" alt="" width="25%">
+
+    <p> Crear el dos objetos nuevos más a partir de celular, el objeto auto, el objeto persona y cambiar                         sus propiedades. </p>
+
+</section>
+
+
+
+
+
+
+<section>
+
+    <h3>Seleccionar un elemento del HTML</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>atributos</th>
+                <th>metodos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>id</td>
+                <td>getElementById()</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>class</td>
+                <td>getElementByClass()</td>
+                <td>devuelve una matriz</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>getElementByTagName()</td>
+                <td>devuelve una matriz</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+    <h3>Seleccionar un elemento del HTML utilizando selectores CSS3</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>metodos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>querySelector()</td>
+                <td>devuelve el primer elemento que responde a los selectores indicados</td>
+            </tr>
+            <tr>
+                <td>querySelectorAll()</td>
+                <td>devuelve una matriz</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<section>
+    <p>modificar un contenido con innerHTML</p>
+</section>
+
+
+<section>
+
+    <p>Modificar estilos CSS3 desde JavaScript</p>
+
+    fondo.style.backgroundColor="#FFCC66";
+
+</section>
+
+
+<section>
+    <h2>Eventos JavaScript</h2>
+</section>
+
+<section>
+    <p>Los eventos más utilizados en las aplicaciones web tradicionales son <em>onload </em> para esperar a que se cargue la página por completo, los eventos <em>onclick, onmouseover, onmouseout</em> para controlar el ratón y <em>onsubmit</em> para controlar el envío de los formularios.</p>
+</section>
+
+<section>
+    <h2>Manejadores de eventos</h2>
+</section>
+
+
+
+<section>
+
+
+   function iniciar();
+
+   var fuentes = new Array();
+   fuentes[0]=img/img1
+   fuentes[1]=img/img2
+   fuentes[2]=img/img3
+
+   imagen.src=fuentex[i];
+
+
+   window.onloda=iniciar;
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+    <h2>Intergalactic Interconnections</h2>
+    <p>
+        You can link between slides internally,
+        <a href="#/2/3">like this</a>.
+    </p>
+</section>
+
+<section>
+    <h2>Speaker View</h2>
+    <p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+    <p>Press the <em>S</em> key to try it out.</p>
+
+    <aside class="notes">
+        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+    </aside>
+</section>
+
+<section>
+    <h2>Export to PDF</h2>
+    <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+    <iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+</section>
+
+<section>
+    <h2>Global State</h2>
+    <p>
+        Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+        will be added as a class to the document element when the slide is open. This lets you
+        apply broader style changes, like switching the page background.
+    </p>
+</section>
+
+<section data-state="customevent">
+    <h2>State Events</h2>
+    <p>
+        Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+    </p>
+    <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+        Reveal.addEventListener( 'customevent', function() {
+        console.log( '"customevent" has fired' );
+    } );
+</code></pre>
+</section>
+
+<section>
+    <h2>Take a Moment</h2>
+    <p>
+        Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+    </p>
+</section>
+
+<section>
+    <h2>Much more</h2>
+    <ul>
+        <li>Right-to-left support</li>
+        <li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+        <li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+        <li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+        <li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+    </ul>
+</section>
+
+<section style="text-align: left;">
+    <h1>THE END</h1>
+    <p>
+        - <a href="http://slides.com">Try the online editor</a> <br>
+        - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+    </p>
+</section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+</script>
+
+</body>
+</html>
