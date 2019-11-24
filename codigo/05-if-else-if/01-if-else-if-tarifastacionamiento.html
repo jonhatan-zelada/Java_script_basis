@@ -16,22 +16,35 @@ Diseñe un programa que determine cuanto debe pagar un cliente por las horas del
 */
 
 //declaración variables
-
-
+let tempo;
+let day;
+let fare;
+let payment;
 
 //ingreso de datos
-
-
-
+tempo = prompt("Enter the number of hours of parking");
+day = prompt("Enter the day");
 
 
 //procesamiento
 
+if (day =="monday" || "tuesday"||"wendesday"||"thursday") {
+    fare=3.5;
+    payment=parseFloat(fare)*parseInt(tempo);
 
+
+} else if(day =="friday"||"saturday") {
+    fare=4.5;
+    payment=parseFloat(fare)*parseInt(tempo);   
+
+    
+} else {
+
+}
 
 
 //impresion
-
+document.write("the payment is" +payment)
 
 </script>
 
