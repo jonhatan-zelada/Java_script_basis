@@ -19,19 +19,31 @@ información:
     */
 
     //declarar varibles
-
+let cantidad;
+let cant_centimetros;
+let cant_pie;
+let cant_pulgadas;
+let cant_yardas;
 
 
     //ingreso datos
-
-
+    cantidad=prompt("add a measure in meters")
 
     //procesamiento
-
-
+    cant_centimetros=cantidad*100;
+    cant_pulgadas=cant_centimetros*2.54;
+    cant_pie=cant_pulgadas*12;
+    cant_yardas=cant_pie*3;
 
 
     //salida datos
+    document.write("in centimeter "+cant_centimetros);
+    document.write("<br>")
+    document.write("in inch "+cant_pulgadas);
+    document.write("<br>")
+    document.write("in foot "+cant_pie);
+    document.write("<br>")
+    document.write("in yardas "+cant_yardas);
 
 
     </script>

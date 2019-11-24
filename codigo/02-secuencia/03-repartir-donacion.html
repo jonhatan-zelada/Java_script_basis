@@ -18,11 +18,28 @@ forma:
 
 
 */
+    let donation;
+    let per_pediatria;
+    let med_general;
+    let gineco;
+    let trauma;
 
 
+    donation=prompt("How much would you like to donate")
+
+    per_pediatria=donation*0.2;
+    med_general=donation*0.45;
+    gineco=donation*0.3;
+    trauma=donation*0.05
 
 
-
+    document.write("Pediatric" + per_pediatria);
+    document.write("<br>")
+    document.write("General medicine" + med_general);
+    document.write("<br>")
+    document.write("gineco"+gineco);
+    document.write("<br>")
+    document.write("traumat"+trauma);
 
 </script>
 
