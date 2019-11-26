@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 id="titulo-principal">CAlsses arrow</h1>
+    <h2 id="suma"></h2>
+<script>
+let tituloID=document.getElementById("titulo principal");
+
+
+
+function cambiartitulo(texto){
+    tituloID.innerHTML=texto;
+}
+
+cambiartitulo();
+let sumaID=document.getElementById("suma");
+
+function suma(num1,num2){
+return num1+num2;
+}
+
+suma.innerHTML=suma(20,20);
+
+
+//Another way to do the same
+let suma1 = (num1,num2) => {
+return num1+num2;
+}
+
+suma1.innerHTML=suma1(3,4);
+
+
+
+</script>
+
+
+</body>
+</html>

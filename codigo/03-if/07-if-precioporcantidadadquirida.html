@@ -23,40 +23,35 @@ Descuento:
 Total a pagar:
 
     */
-    let num1;
+    let cant;
     let num;
     let total_pago;
 
-    num1=prompt("Enter the amount of products");
-    num=parseInt(num1);
+    cant=prompt("Enter the amount of products");
+    num=parseInt(cant);
 
-    if (1<=num<=25) {
+    if (1<=num && num<=25) {
         total_pago=num*27.7*0.95;
         document.write("Precio unitario: 27.7")
         document.write("<br>")
         document.write("Descuento:5%")
         document.write("</br>")
         document.write("total a pagar" + total_pago)
-    }
-    if (26<=num<=50) {
+    }  if (26<=num && num<=50) {
         total_pago=num*25.5*.95;
         document.write("Precio unitario: 25.5")
         document.write("<br>")
         document.write("Descuento:5%")
         document.write("</br>")
         document.write("total a pagar" + total_pago)
-    }
-    
-     if (51<=num<=75) {
+    }  if (51<=num && num<=75) {
         total_pago=num*23.5*.85;
         document.write("Precio unitario: 23.5")
         document.write("<br>")
         document.write("Descuento:15%")
         document.write("</br>")
         document.write("total a pagar" + total_pago)
-    }
-
-      if (num>75) {
+    }  if (num>75) {
         total_pago=num*21.5*.85;
         document.write("Precio unitario: 21.5")
         document.write("<br>")
