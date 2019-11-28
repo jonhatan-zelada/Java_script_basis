@@ -28,18 +28,21 @@ day = prompt("Enter the day");
 
 //procesamiento
 
-if (day =="monday" || "tuesday"||"wendesday"||"thursday") {
+if (day =="monday" || day =="tuesday"||day =="wendesday"||day =="thursday") {
     fare=3.5;
     payment=parseFloat(fare)*parseInt(tempo);
 
 
-} else if(day =="friday"||"saturday") {
+} else if(day =="friday"||day =="saturday") {
     fare=4.5;
     payment=parseFloat(fare)*parseInt(tempo);   
 
     
-} else {
-
+} else if (day =="sunday") {
+    fare=2.5;
+    payment=parseFloat(fare)*parseInt(tempo); 
+}else {
+    document.write("enter a proper day")
 }
 
 

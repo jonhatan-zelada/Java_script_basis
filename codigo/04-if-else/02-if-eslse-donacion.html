@@ -20,13 +20,32 @@ La institución desea saber cuanto de dinero destinará a cada rubro anualmente.
 */
 
     //declarar variables
-
+let donation;
+let children;
+let stock_ex;
+let hospital;
 
     //ingreso datos
-
+    donation=prompt("Enter the value of your donation")
 
 
     //procesamiento
+if (donation>=10000) {
+    document.write("The amount asigned to Hospital is"+parseInt(donation)*0.3)
+    document.write("<br>")
+    document.write("The amount asigned to Children dinning room is"+parseInt(donation)*0.5)
+    document.write("<br>")
+    document.write("The amount asigned to stock exchange is"+parseInt(donation)*0.2)
+
+} else {
+    document.write("The amount asigned to Hospital is"+parseInt(donation)*0.25)
+    document.write("<br>")
+    document.write("The amount asigned to Children dinning room is"+parseInt(donation)*0.6)
+    document.write("<br>")
+    document.write("The amount asigned to stock exchange is"+parseInt(donation)*0.15)
+}
+
+
 
 
 </script>

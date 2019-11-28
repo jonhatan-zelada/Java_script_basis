@@ -17,6 +17,25 @@ Diseñe un programa que determine la categoría de un postulante.
 
     */
 
+let gender;
+let age;
+
+gender=prompt("Enter the student gender: Male or female");
+age=prompt("Enter the student age");
+
+if (gender=="Male" && age<23) {
+    document.write("The applicant category is FA")
+    
+} else if (gender=="Male" && age>23){
+    document.write("The applicant category is FB")
+}
+else if (gender=="Female" && age<25){
+    document.write("The applicant category is MA")
+
+} else if (gender=="Female" && age>25) {
+    document.write("The applicant category is MB")
+}
+
 
 
 </script>
