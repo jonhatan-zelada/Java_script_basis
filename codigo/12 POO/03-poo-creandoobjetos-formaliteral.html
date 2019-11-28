@@ -17,21 +17,45 @@
             let carro={
                 marca: "audi",
                 color:"blue",
-                motor:"1.6",
+                motor:"1.6 lt",
             
             //metodo get
             decirmarca:function(){
                      alert(this.marca);
             },
+            decircolor:function(){
+                     alert(this.color);
+            },
+            decirmotor:function(){
+                     alert(this.motor);
+            },
 
             //metodo set
-
-                   //metodo set
-            cambiarNombre:function(nueva_marca){
+            cambiarMarca:function(nueva_marca){
                 this.marca= nueva_marca;
+            },
+            cambiarColor:function(nuevo_color){
+                this.color= nuevo_color;
+            },
+            cambiarMotor:function(nueva_motor){
+                this.motor= nueva_motor;
             }
 
             }
+
+
+            carro.decircolor();
+            carro.decirmarca();
+            carro.decirmotor();
+
+            carro.cambiarMarca("mitsubishi");
+            carro.decirmarca();
+
+            carro.cambiarColor("Red");
+            carro.decircolor();
+
+            carro.cambiarMotor("3.2lt")
+            carro.decirmotor();
 
             
             

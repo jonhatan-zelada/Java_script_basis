@@ -26,21 +26,22 @@
         } ;
 
         document.write("nombre " + gato.nombre);
+        document.write("<br>")
         document.write("nombre " + gato["nombre"]);
 
         gato.decirNombre();
-
         gato.cambiarNombre("lala");
         gato.decirNombre();
 
 
+
         var gato2= Object.create(gato);
         gato2.cambiarNombre("minino");
+        gato2.decirNombre();
+
 
         var gato3= Object.create(gato);
-        gato3.cambiarNombre("gatito");
-
-        gato2.decirNombre();
+        gato3.cambiarNombre("gatito");  
         gato3.decirNombre();
 
     </script>
