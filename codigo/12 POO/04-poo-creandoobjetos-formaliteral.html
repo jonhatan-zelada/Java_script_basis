@@ -18,7 +18,55 @@
 
             */
 
-            
+            let persona = {
+
+                 nombre:"José",
+                 edad:32,
+                 sueldo:2000,
+
+            //get
+                getNombre:function() 
+                {
+                    alert(this.nombre);
+                },
+                getEdad:function()
+                {
+                    alert(this.edad);
+                },
+                getSueldo:function()
+                {
+                    alert(this.sueldo);
+                },
+
+            // set
+                setNombre:function(new_nombre)
+                {
+                    this.nombre=new_nombre;
+
+                },
+                setEdad:function(new_edad)
+                {
+                    this.edad=new_edad;
+                },
+                setSueldo:function(new_sueldo){
+                    this.sueldo=new_sueldo;
+                }
+
+
+            }
+
+
+            persona.getNombre();
+            persona.setNombre("Luis");
+            persona.getNombre();
+
+            persona.getEdad();
+            persona.setEdad(45);
+            persona.getEdad();
+
+            persona.getSueldo();
+            persona.setSueldo(5000);
+            persona.getSueldo();
 
         </script>
     </head>

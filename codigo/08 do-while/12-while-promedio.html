@@ -11,6 +11,26 @@ genere 5 numeros al azar y calcule el promedio de dichos numeros.
 tip: promedio es igual a la suma de los numeros entre la cantidad de numeros que hay.
 */
 
+
+let i=1;
+let number;
+let sum=0;
+
+do
+{
+number=Math.round(Math.random()*100);
+document.write(number);
+document.write("<br>");
+i++;
+sum=sum+number;
+
+}
+while(i<=5)
+document.write("<br>");
+document.write("<br>");
+document.write("El promedio es "+sum/5);
+
+
         </script>
 
     </head>
